@@ -1,0 +1,312 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:'en-us' }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-109064262-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Personal webpage">
+	<meta name="author" content="kimxons">
+
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+	<title>{% block title %}Meshack Kimwele{%endblock title %}</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+
+	<!-- CSS -->
+	<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'css/animate.css" rel="stylesheet' %}">
+
+	<!-- Custom styles CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+
+</head>
+
+<body>
+<!-- home start -->
+	<section id="home" class="pfblock-image screen-height">
+	<div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Meshack Kimwele and I am</div>
+			<h1>Full-Stack Software Developer</h1>
+			<div class="start">creating modern and responsive Web Application</div>
+		</div>
+
+		<a href="#services">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-3x"></i>
+				</span>
+			</div>
+		</a>
+	</section>
+<!-- home end  -->
+
+	<!-- Navigation start -->
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Meshack Kimwele</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">About me</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact me</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- .container -->
+
+		</nav>
+
+	</header>
+<!-- Navigation end -->
+
+
+<!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ABOUT MESHACK</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>
+							My name is Meshack Kimwele and I am a Fullstack Software Developer. 
+							I currently live in Nairobi, Kenya. I'm an absolute geek and I love geeking out on all things Linux, Python and Flask.
+							</p>
+							<p>
+							I first fell in love with programming and Tech in general after highschool.
+							I even enrolled for a bachelor's degree in Economics at University of Nairobi
+							only to dropout in my first year. I realized that I was not into Ecnomics and technology was my thing.
+							Technology has been taking up my life ever since!  
+							I started off with building apps in Java, my first programming languag which i was introduced to by a friend.
+							</p>
+							<p>
+							As of now, I am heavily focused on both front-end and back-end web development. 
+							My favorite development stacks at the moment are Python, Flask and Rest APIs.
+
+							Values I hold dearly are loyalty, reliability, authenticity and helping others soar higher. 
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="myphoto" src="{% static 'images/shak.jpg' %}" 
+						alt="Meshack Kimwele" style="border-radius: 100%;filter:grayscale(50%);">
+					</div>
+				</div>
+		</div>
+		<!-- .container -->
+
+		<div class="skills col-xs-12">
+				<h2 class="pfblock-title">MY SKILLS</h2>
+				<div class="pfblock-line"></div>
+
+				<div class="row">
+					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
+					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
+					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
+					<div class="devicon-php-plain col-xs-15"><span>PHP</span></div>
+					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
+				</div>
+				<div class="row">
+					<div  class="devicon-nodejs-plain col-xs-15"><span>NODEJS</span></div>
+					<div  class="devicon-python-plain col-xs-15"><span>PYTHON</span></div>
+					<div  class="devicon-django-plain col-xs-15"><span>DJANGO</span></div>
+					<div  class="devicon-laravel-plain col-xs-15"><span>LARAVEL</span></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+<!-- Services end -->
+
+
+<!-- Portfolio start -->
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Portfolio</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- .row -->
+
+			<div class="row">
+				{% for project in list_projects|slice:":2" %}
+					<div class="card col-xs-12 col-sm-4 col-md-5">
+							<div class="grid wow zoomIn">
+
+								<figure class="effect-bubba">
+									<a href="{{ project.url }}" target="_blank">
+									{% with 'images/'|add:project.img_name as image_static %}
+											<img class="card-img-top" src="{% static image_static %}">
+										</a>
+									{% endwith %}
+								</figure>
+
+								<div class="card-block">
+									<h2 class="card-title">{{ project.title }}</h2>
+									<p class="card-text">{{ project.desc }}</p>
+									<div class="tools">
+										{% for tool in project.slug.split %}
+											<span>{{ slug }}</span>
+										{% endfor %}
+									</div>
+								</div>
+
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+		</div>
+		<!-- .container -->
+
+	</section>
+<!-- Portfolio end -->
+
+
+<!-- CallToAction start -->
+	<section class="calltoaction">
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">NEED A SUCCESSFUL PROJECT?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						I'm available for freelance contracts, so get in touch:
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">Hire Me</a>
+				</div>
+
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</section>
+<!-- CallToAction end -->
+
+<!-- Contact start -->
+	<section id="contact" class="pfblock">
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">Get in Touch</h2>
+					<div class="pfblock-line"></div>
+					<div class="pfblock-subtitle">
+						I'm currently accepting new projects and would love to hear about yours. 
+						Kindly take a few minutes to tell me about it. 
+						After you introduce yourself and your project, 
+						I'll get it touch with you asap!
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- .row -->
+
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+				{% include 'contact_form.html' %}
+			</div>
+			<!-- .row -->
+
+		</div>
+		<!-- .container -->
+	</section>
+<!-- Contact end -->
+
+<!-- Footer start -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/meshack-kitonga-kimwele-94336a121/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/kimxons" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://twitter.com/mishaelkimxons" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="mailto:info.meshackkimwele@gmil.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+
+					<p class="copyright"> Feel free to email me, or visit my Pages.</p>
+					<p class="heart">Made with <span class="fa fa-heart fa-x animated pulse"></span> 
+						&COPY; Copyright 2020 Meshack Kimwele</p>
+				</div>
+
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</footer>
+<!-- Footer end -->
+
+<!-- JS files -->
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.cbpQTRotator.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
