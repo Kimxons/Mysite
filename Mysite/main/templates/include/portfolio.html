@@ -1,0 +1,41 @@
+{% load static %}
+<section id="portfolio" class="pfblock">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="pfblock-header wow fadeInUp">
+                    <h2 class="pfblock-title">Portfolio</h2>
+                        <div class="pfblock-line"></div>
+                            <div class="pfblock-subtitle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="min-width: 18rem;">
+            {% for project in list_projects|slice:":3" %}
+                <div class="card-body col-xs-6 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <a href="{{ project.url }}" target="_blank">
+                                {% with 'images/'|add:project.img_name as image_static %}
+                                    <img class="card-img-top" src="{% static image_static %}"></a>
+                                {% endwith %}
+                        </figure>
+
+                        <div class="card-block">
+                            <h4 class="card-title">{{ project.title }}</h4>
+                                <p class="card-text">{{ project.desc }}</p>
+                                    <div class="tools">
+                                        {% for slug in project.slug.split %}
+                                            <span>{{ slug }}</span>
+                                        {% endfor %}
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- .container -->
+
+</section>

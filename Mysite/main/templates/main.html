@@ -40,11 +40,12 @@
 <body>
 <!-- home start -->
 	<section id="home" class="pfblock-image screen-height">
-	<div class="home-overlay"></div>
+	<div class="home-overlay">
+	</div>
 		<div class="intro">
-			<div class="start">Hello, my name is Meshack Kimwele and I am</div>
-			<h1>Full-Stack Software Developer</h1>
-			<div class="start">creating modern and responsive Web Application</div>
+			<div class="start">Hello, my name is Meshack Kimwele and I am a</div><br>
+			<h1>Full-Stack Software Developer</h1><br>
+			<div class="start">IT consultancy & software Development</div>
 		</div>
 
 		<a href="#services">
@@ -119,9 +120,8 @@
 							<p>
 							As of now, I am heavily focused on both front-end and back-end web development. 
 							My favorite development stacks at the moment are Python, Flask and Rest APIs.
-
-							Values I hold dearly are loyalty, reliability, authenticity and helping others soar higher. 
 							</p>
+							<p>Values I hold dearly are loyalty, reliability, authenticity and helping others soar higher.</p> 
 						</div>
 					</div>
 				</div>
@@ -160,57 +160,7 @@
 
 
 <!-- Portfolio start -->
-	<section id="portfolio" class="pfblock">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">Portfolio</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-			<!-- .row -->
-
-			<div class="row">
-				{% for project in list_projects|slice:":2" %}
-					<div class="card col-xs-12 col-sm-4 col-md-5">
-							<div class="grid wow zoomIn">
-
-								<figure class="effect-bubba">
-									<a href="{{ project.url }}" target="_blank">
-									{% with 'images/'|add:project.img_name as image_static %}
-											<img class="card-img-top" src="{% static image_static %}">
-										</a>
-									{% endwith %}
-								</figure>
-
-								<div class="card-block">
-									<h2 class="card-title">{{ project.title }}</h2>
-									<p class="card-text">{{ project.desc }}</p>
-									<div class="tools">
-										{% for tool in project.slug.split %}
-											<span>{{ slug }}</span>
-										{% endfor %}
-									</div>
-								</div>
-
-							</div>
-						</div>
-					{% endfor %}
-				</div>
-		</div>
-		<!-- .container -->
-
-	</section>
-<!-- Portfolio end -->
-
+{% include 'include/portfolio.html' %}
 
 <!-- CallToAction start -->
 	<section class="calltoaction">
@@ -238,7 +188,7 @@
 
 <!-- Contact start -->
 	<section id="contact" class="pfblock">
-		<div class="row">
+		<div class="container-fluid">
 
 			<div class="col-sm-6 col-sm-offset-3">
 
@@ -270,32 +220,7 @@
 	</section>
 <!-- Contact end -->
 
-<!-- Footer start -->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-12">
-
-					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/meshack-kitonga-kimwele-94336a121/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/kimxons" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="https://twitter.com/mishaelkimxons" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="mailto:info.meshackkimwele@gmil.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-
-					<p class="copyright"> Feel free to email me, or visit my Pages.</p>
-					<p class="heart">Made with <span class="fa fa-heart fa-x animated pulse"></span> 
-						&COPY; Copyright 2020 Meshack Kimwele</p>
-				</div>
-
-			</div>
-			<!-- .row -->
-		</div>
-		<!-- .container -->
-	</footer>
-<!-- Footer end -->
-
+{% include 'include/footer.html' %}
 <!-- JS files -->
 <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>

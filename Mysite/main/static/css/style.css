@@ -172,7 +172,7 @@ input:nth-child(3n){
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -290,8 +290,8 @@ input:nth-child(3n){
 #myphoto {
 	margin-top: 10vh;
 	border-radius: 100%;
-	filter: grayscale(60%);
-	width: 300px;
+	filter: grayscale(70%);
+	width: 400px;
 }
 
 .skills {
@@ -706,8 +706,8 @@ div[class^="devicon"] span{
 /*--------------------------------*/
 
 .card {
-	padding: 0px 10px 0px 5px;
-	margin: 10px 30px 10px;
+	padding: 0px 5px 0px 5px;
+	margin: 5px 20px 5px;
 	border: 1px solid lightgray;
 }
 
@@ -745,7 +745,7 @@ div[class^="devicon"] span{
 	cursor: pointer;
 }
 .grid img {
-	margin-right: 10px;
+	margin-left: 10px;
 }
 .tools {
 	height: 60px;
@@ -759,7 +759,7 @@ div[class^="devicon"] span{
 	padding: 1px 10px;
 	margin-bottom: 20px;
 	border-radius: 4px;
-	font: 5px, 'Raleway', sans-serif;
+	font: 5px, 'Roboto', sans-serif;
 }
 
 .tools > span:hover {
@@ -847,6 +847,6 @@ figure.effect-bubba:hover p {
 #myphoto {
 	margin-top: 10vh;
 	border-radius: 100%;
-	filter: grayscale(30%);
-	width: 300px;
+	filter: grayscale(60%);
+	width: 400px;
 }
