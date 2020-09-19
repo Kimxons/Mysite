@@ -10,7 +10,7 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-109064262-1');
+		gtag('config', 'GA_MEASUREMENT_ID');
 	</script>
 
 	<meta charset="UTF-8">
@@ -21,10 +21,9 @@
 	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-	<title>{% block title %}Meshack Kimwele{%endblock title %}</title>
+	<title>{% block title %}Home | Meshack Kimwele{%endblock title %}</title>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
 
 	<!-- CSS -->
 	<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -43,7 +42,12 @@
 	<div class="home-overlay">
 	</div>
 		<div class="intro">
-			<div class="start">Hello, my name is Meshack Kimwele and I am a</div><br>
+			<div class="start">
+				<h2>
+					Hello, I'm
+					<h2> Meshack Kimwele</h2>
+				</h2>
+			</div><br>
 			<h1>Full-Stack Software Developer</h1><br>
 			<div class="start">IT consultancy & software Development</div>
 		</div>
@@ -130,6 +134,10 @@
 					<div class="pfblock-header wow fadeInUp">
 						<img id="myphoto" src="{% static 'images/shak.jpg' %}" 
 						alt="Meshack Kimwele" style="border-radius: 100%;filter:grayscale(50%);">
+						<div class="pfblock-title">
+							<a href="https://drive.google.com/file/d/19Dd1mvIoVZcO4H16Ezgg69-uf4vVMloK/view?usp=sharing" target="_blank" id="resume-effect">
+								<i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my Resume'</a>
+						</div>
 					</div>
 				</div>
 		</div>

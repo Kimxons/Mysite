@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #my apps
     'main',
+    'blog',
+    'projects',
 ]
 
 JAZZMIN_SETTINGS = {
@@ -68,7 +71,7 @@ JAZZMIN_SETTINGS = {
         {'model': 'auth.User'},
 
         # url to visit the site 
-        {'name': 'View Site','url': '../'},
+        {'name': 'View Site','url': ''}, #Remember to include the link
     ],
 
         ##side menu
